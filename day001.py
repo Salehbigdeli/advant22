@@ -24,3 +24,5 @@ def get_top(k=3):
 print('part 1', max(elf_calories()))
 
 print('part 2', sum(get_top()))
+# or
+print('part 2', sum(heapq.nlargest(3, elf_calories())))
